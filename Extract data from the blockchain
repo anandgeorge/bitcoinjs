@@ -1,0 +1,17 @@
+./bitcoin-iterate --start 1 --end 10 --output=%bn,%th,%os
+
+./bitcoin-iterate --start 1 --end 100 --tx=%bh,%tX
+
+./bitcoin-iterate --start 1 --end 100000 --tx=%tX,%bN > ../blk-parse
+
+PID 22330
+
+./bitcoin-iterate --tx=%tX,%bN > ../blk-parse
+./bitcoin-iterate --tx=%tX,%bN > ../transactions &
+[1] 22344
+
+./bitcoin-iterate --tx=%tX,%bN
+
+https://github.com/mrqc/bitcoin-blk-file-reader.git
+
+sudo apt-get install libssl-dev build-essential g++ libboost-all-dev libsparsehash-dev git-core perl
